@@ -1,9 +1,11 @@
 import geo.utils as utils
 
-a, b, r = map(int, input().split())
+#calculate the length of hypotenuse(c) when a=3 and b=4
+a, b = 3, 4
+c = utils.pythagoras(a,b)
+print('c=', c)
 
-c = utils.pythagoras(a, b)
+#calculate the area of circle with radius r = 10
+r = 10
 area = utils.circle(r)
-
-print(c)
-print(area)
+print('area =', area)
